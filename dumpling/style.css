@@ -1,0 +1,113 @@
+body{
+	background-image:url("../dumpling/images/DUMPLING_BC_FRONT.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
+font-family: 'Gloria Hallelujah', cursive;
+	overflow: scroll;
+}
+.container{
+	width: auto;
+	height: auto;
+	margin: 0 auto 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.header{
+	background-image:url("../dumpling/images/DUMPLING_BC_BACK.jpg") no-repeat;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	height:auto;
+	text-align:center;
+	border:2px;
+}
+
+nav{
+	width: 100%;
+	position: fixed;
+	float: top;
+	clear: both;
+	display:inline-block;
+	color:white;
+	height:50px;
+	background-image: url("../dumpling/images/laptop.jpg");
+	background-size: cover;
+	display:block;
+	margin: auto;
+	border: none;
+}
+nav li{
+	display:inline-block;
+	margin-right:100px;
+	padding-top: 20px;
+	position: relative;
+}
+nav a{
+	color:#D3D3D3;
+	text-decoration: none;
+}
+nav a:hover{
+	color:white;
+}
+nav a:before{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 0%;
+	background-color: #444;
+	position: absolute;
+	top:0;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width:100%;
+}
+
+.content{
+	color: #808080;
+   width:70%;
+   padding: 10px;
+   float: left;
+   background: black;
+}
+.sidebar{
+	position:fixed;
+	display:inline-block;
+	width: 25%;
+	background: none;
+	min-height:4em;
+	padding: 0px auto;
+}
+.sidebar img.ig{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left:5px;
+	padding-top: 110px;
+	padding-left:15px;
+}
+.sidebar p{
+	display:inline-block;
+	margin-right:20px;
+}
+.sidebar img.contact{
+	padding:none;
+	margin:none;
+display: inline-block;
+width: 300px;
+height: 150px;
+}
+.footer{
+	position: relative;
+	float: bottom;
+	clear: both;
+	width: 100%
+	margin: auto;
+	background: none;
+	height: 20px;
+	color: white;
+	text-align: center;
+	border: 2px;
+}
